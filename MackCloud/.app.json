@@ -4,13 +4,85 @@
     {
       "type": "kendo-ui-mobile:view",
       "name": "home",
-      "components": [],
+      "components": [
+        {
+          "type": "kendo-ui-mobile:authentication",
+          "name": "homeModel",
+          "dataProvider": "mackCloud",
+          "emailLabel": "TIA",
+          "emailPlaceholder": "Código de matrícula",
+          "passwordLabel": "Senha",
+          "signinLabel": "Sign In",
+          "signinRedirect": "dataListViewAulas",
+          "enableRegistration": true,
+          "gotoRegisterLabel": "Register",
+          "registerEmailLabel": "TIA",
+          "registerPasswordLabel": "Password",
+          "registerNameLabel": "Name",
+          "registerLabel": "Register",
+          "registerRedirect": "dataListViewAulas",
+          "gotoSigninLabel": "Sign In"
+        }
+      ],
       "title": "Home View",
+      "addToNavigation": false
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "dataListViewAulas",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:list",
+          "name": "dataListViewAulasModel",
+          "dataProvider": "mackCloud",
+          "collection": "Aula",
+          "headerField": "Titulo",
+          "subHeaderField": "Data",
+          "group": "Disciplina",
+          "masterDetails": true,
+          "detailHeaderField": "Disciplina",
+          "detailSubHeaderField": "Titulo",
+          "pullToRefresh": true,
+          "endlessScroll": false
+        }
+      ],
+      "title": "Disciplinas",
       "addToNavigation": true,
-      "icon": "home"
+      "icon": "organize"
+    },
+    {
+      "type": "kendo-ui-mobile:view",
+      "name": "dataListViewFiles",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:list",
+          "name": "dataListViewFilesModel",
+          "dataProvider": "mackCloud",
+          "collection": "Arquivo",
+          "headerField": "Titulo",
+          "subHeaderField": "file",
+          "group": "Tipo",
+          "masterDetails": false,
+          "pullToRefresh": false,
+          "endlessScroll": false
+        }
+      ],
+      "title": "Arquivos",
+      "addToNavigation": true,
+      "icon": "organize"
     }
   ],
-  "dataProviders": [],
+  "dataProviders": [
+    {
+      "type": "kendo-ui-mobile:dataProvider",
+      "name": "mackCloud",
+      "everliveUrl": "//platform.telerik.com/bs-api/v1/",
+      "title": "MackCloud / MackCloud",
+      "source": "everlive",
+      "everliveKey": "g6x3ngrdyonthblg",
+      "offlineStorage": true
+    }
+  ],
   "name": "kendoUiMobileApp",
   "navigation": "tabstrip",
   "view": "home",
