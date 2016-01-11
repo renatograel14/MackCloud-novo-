@@ -148,142 +148,56 @@
 
 /* START_CUSTOM_CODE_kendoUiMobileApp */
 
-.km-flat .km-view .km-navbar {
-    background-color: rgba(255, 0, 0, );
-    color: rgb(255, 255, 255);
-}
-
 .km-flat .km-button {
     background-color: rgb(255, 0, 0);
     color: rgb(255, 255, 255);
 }
-
+.km-flat .km-view .km-content .km-list .km-state-active .km-listview-link {
+    background-color: rgb(211, 29, 21);
+}
+.km-flat .km-view .km-content .km-list > li .km-switch .km-switch-container {
+    background-color: rgb(153, 153, 153);
+}
+.km-flat .km-view .km-content .km-list > li .km-switch .km-switch-container .km-switch-handle {
+    background-color: rgb(255, 255, 255);
+}
+.km-flat .km-view .km-content .km-list > li .km-switch .km-switch-container .km-switch-handle .km-switch-label-on {
+    color: rgb(255, 255, 255);
+}
 .km-flat .km-view .km-navbar {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(211, 29, 21);
 }
-
-.km-ios7 .km-view .km-tabstrip .km-button {
-    background-color: rgb(255, 0, 0);
+.km-flat .km-view .km-navbar .km-button {
+    background-color: rgb(211, 29, 21);
 }
-
-.km-ios7 .km-view .km-tabstrip .km-state-active span.km-icon {
+.km-flat .km-view .km-navbar .km-button .km-text {
     color: rgb(255, 255, 255);
 }
-
-.km-ios7 .km-view .km-tabstrip .km-button.km-state-active {
-    background-color: rgb(209, 0, 0);
-}
-
-.km-ios7 .km-view .km-tabstrip .km-button.km-state-active .km-text {
+.km-flat .km-view .km-navbar .km-view-title > * {
     color: rgb(255, 255, 255);
 }
-
-.km-ios7 .km-view .km-tabstrip .km-button .km-icon {
-    color: rgb(204, 204, 204);
-}
-
-.km-ios7 .km-view .km-tabstrip .km-button .km-text {
-    color: rgb(204, 204, 204);
-}
-
-.km-android .km-view .km-tabstrip .km-button {
-    background-color: rgb(255, 0, 0);
-}
-
-.km-android .km-view .km-tabstrip .km-state-active span.km-icon {
-    color: rgb(255, 255, 255);
-}
-
-.km-android .km-view .km-tabstrip .km-button.km-state-active {
-    background-color: rgb(209, 0, 0);
-}
-
-.km-android .km-view .km-tabstrip .km-button.km-state-active .km-text {
-    color: rgb(255, 255, 255);
-}
-
-.km-android .km-view .km-tabstrip .km-button .km-icon {
-    color: rgb(204, 204, 204);
-}
-
-.km-android .km-view .km-tabstrip .km-button .km-text {
-    color: rgb(204, 204, 204);
-}
-
-.km-blackberry .km-view .km-tabstrip .km-button {
-    background-color: rgb(255, 0, 0);
-}
-
-.km-blackberry .km-view .km-tabstrip .km-state-active span.km-icon {
-    color: rgb(255, 255, 255);
-}
-
-.km-blackberry .km-view .km-tabstrip .km-button.km-state-active {
-    background-color: rgb(209, 0, 0);
-}
-
-.km-blackberry .km-view .km-tabstrip .km-button.km-state-active .km-text {
-    color: rgb(255, 255, 255);
-}
-
-.km-blackberry .km-view .km-tabstrip .km-button .km-icon {
-    color: rgb(204, 204, 204);
-}
-
-.km-blackberry .km-view .km-tabstrip .km-button .km-text {
-    color: rgb(204, 204, 204);
-}
-
-.km-wp .km-view .km-tabstrip .km-button {
-    background-color: rgb(255, 0, 0);
-}
-
-.km-wp .km-view .km-tabstrip .km-state-active span.km-icon {
-    color: rgb(255, 255, 255);
-}
-
-.km-wp .km-view .km-tabstrip .km-button.km-state-active {
-    background-color: rgb(209, 0, 0);
-}
-
-.km-wp .km-view .km-tabstrip .km-button.km-state-active .km-text {
-    color: rgb(255, 255, 255);
-}
-
-.km-wp .km-view .km-tabstrip .km-button .km-icon {
-    color: rgb(204, 204, 204);
-}
-
-.km-wp .km-view .km-tabstrip .km-button .km-text {
-    color: rgb(204, 204, 204);
-}
-
 .km-flat .km-view .km-tabstrip .km-button {
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(211, 29, 21);
 }
-
-.km-flat .km-view .km-tabstrip .km-state-active span.km-icon {
-    color: rgb(255, 255, 255);
-}
-
-.km-flat .km-view .km-tabstrip .km-button.km-state-active {
-    background-color: rgb(209, 0, 0);
-}
-
-.km-flat .km-view .km-tabstrip .km-button.km-state-active .km-text {
-    color: rgb(255, 255, 255);
-}
-
 .km-flat .km-view .km-tabstrip .km-button .km-icon {
-    color: rgb(204, 204, 204);
+    color: rgb(255, 255, 255);
 }
-
 .km-flat .km-view .km-tabstrip .km-button .km-text {
     color: rgb(204, 204, 204);
 }
+.km-flat .km-view .km-tabstrip .km-button.km-state-active {
+    background-color: rgb(165, 23, 16);
+}
+.km-flat .km-view .km-tabstrip .km-button.km-state-active .km-text {
+    color: rgb(255, 255, 255);
+}
+.km-flat .km-view .km-tabstrip .km-state-active span.km-icon {
+    color: rgb(255, 255, 255);
+}
+.km-flat .km-view .km-content .km-button {
+    background-color: rgb(211, 29, 21);
+}
 
-
-/* Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes */
 
 
 /* END_CUSTOM_CODE_kendoUiMobileApp */
