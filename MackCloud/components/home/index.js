@@ -9,6 +9,10 @@ app.home = kendo.observable({
 // Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes
 
 // END_CUSTOM_CODE_home
+
+
+// START_CUSTOM_CODE_homeModel
+// Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes
 (function(parent) {
     var provider = app.data.mackCloud,
         mode = 'signin',
@@ -98,8 +102,4 @@ app.home = kendo.observable({
         provider.Users.currentUser().then(successHandler, init);
     });
 })(app.home);
-
-// START_CUSTOM_CODE_homeModel
-// Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes
-
 // END_CUSTOM_CODE_homeModel
