@@ -24,7 +24,7 @@
           "gotoSigninLabel": "Sign In"
         }
       ],
-      "title": "Home View",
+      "title": "Mackenzie",
       "addToNavigation": false
     },
     {
@@ -70,31 +70,6 @@
       "title": "Arquivos",
       "addToNavigation": true,
       "icon": "organize"
-    },
-    {
-      "type": "kendo-ui-mobile:view",
-      "name": "authenticationView",
-      "components": [
-        {
-          "type": "kendo-ui-mobile:authentication",
-          "name": "authenticationViewModel",
-          "dataProvider": "mackCloud",
-          "emailLabel": "Email",
-          "passwordLabel": "Password",
-          "signinLabel": "Sign In",
-          "signinRedirect": "home",
-          "enableRegistration": true,
-          "gotoRegisterLabel": "Register",
-          "registerEmailLabel": "Email",
-          "registerPasswordLabel": "Password",
-          "registerNameLabel": "Name",
-          "registerLabel": "Register",
-          "registerRedirect": "home",
-          "gotoSigninLabel": "Sign In"
-        }
-      ],
-      "title": "Authentication",
-      "addToNavigation": false
     }
   ],
   "dataProviders": [
