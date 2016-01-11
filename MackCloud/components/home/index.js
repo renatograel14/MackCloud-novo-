@@ -53,8 +53,8 @@ app.home = kendo.observable({
             email: '',
             password: '',
             validateData: function(data) {
-                if (!data.email) {
-                    alert('Missing email');
+                if (!data.tia) {
+                    alert('Missing TIA');
                     return false;
                 }
 
