@@ -1,19 +1,19 @@
 'use strict';
 
 app.dataListViewFiles = kendo.observable({
-    onShow: function() {},
-    afterShow: function() {}
+    onShow: function () {},
+    afterShow: function () {}
 });
 
 // START_CUSTOM_CODE_dataListViewFiles
 // Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes
 
 // END_CUSTOM_CODE_dataListViewFiles
-(function(parent) {
+(function (parent) {
     var dataProvider = app.data.mackCloud,
-        flattenLocationProperties = function(dataItem) {
+        flattenLocationProperties = function (dataItem) {
             var propName, propValue,
-                isLocation = function(value) {
+                isLocation = function (value) {
                     return propValue && typeof propValue === 'object' &&
                         propValue.longitude && propValue.latitude;
                 };
@@ -38,8 +38,40 @@ app.dataListViewFiles = kendo.observable({
             group: {
                 field: 'Tipo'
             },
+            change: function (e) {
+                var data = this.data();
+                for (var i = 0; i < data.length; i++) {
+                    var dataItem = data[i];
 
-            change: function(e) {
+                    flattenLocationProperties(dataItem);
+                }
+            },
+            schema: {
+                model: {
+                    fields: {
+                        'Titulo': {
+                            field: 'Titulo',
+                            defaultValue: ''
+                        },
+                        'file': {
+                            field: 'file',
+                            defaultValue: ''
+                        },
+                    }
+                }
+            },
+        },
+        dataSourceOptFile = {
+            type: 'everlive',
+            transport: {
+                typeName: 'Arquivo',
+                dataProvider: dataProvider
+            },
+            group: {
+                field: 'Tipo'
+            },
+
+            change: function (e) {
                 var data = this.data();
                 for (var i = 0; i < data.length; i++) {
                     var dataItem = data[i];
@@ -63,6 +95,7 @@ app.dataListViewFiles = kendo.observable({
             },
         },
         dataSource = new kendo.data.DataSource(dataSourceOptions),
+        dataSourceFile = new kendo.data.DataSource(dataSourceOptFile),
         dataListViewFilesModel = kendo.observable({
             dataSource: dataSource
         });
