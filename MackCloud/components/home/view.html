@@ -4,7 +4,7 @@
             <ul data-role="listview" data-style="inset">
                 <li>
                     <label>TIA
-                        <input type="email" placeholder="Código de matrícula" data-bind="value: homeModel.email" required autofocus>
+                        <input type="text" placeholder="Código de matrícula" data-bind="value: homeModel.tia" required autofocus>
                     </label>
                 </li>
                 <li>
@@ -27,7 +27,7 @@
             <ul data-role="listview" data-style="inset">
                 <li>
                     <label>TIA
-                        <input type="email" data-bind="value: homeModel.email" required>
+                        <input type="text" data-bind="value: homeModel.tia" required>
                     </label>
                 </li>
                 <li>
@@ -38,6 +38,11 @@
                 <li>
                     <label>Name
                         <input type="text" data-bind="value: homeModel.displayName">
+                    </label>
+                </li>
+                <li>
+                    <label>Email
+                        <input type="email" data-bind="value: homeModel.email">
                     </label>
                 </li>
             </ul>
