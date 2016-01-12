@@ -95,6 +95,10 @@ app.dataListViewAulas = kendo.observable({
                             field: 'file',
                             defaultValue: ''
                         },
+                        'Tipo': {
+                            field: 'Tipo',
+                            defaultValue: ''
+                        }
                     }
                 }
             },
