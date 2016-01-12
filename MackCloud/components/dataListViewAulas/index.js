@@ -1,8 +1,8 @@
 'use strict';
 
 app.dataListViewAulas = kendo.observable({
-    onShow: function () {},
-    afterShow: function () {}
+    onShow: function() {},
+    afterShow: function() {}
 });
 
 // START_CUSTOM_CODE_dataListViewAulas
@@ -13,11 +13,11 @@ app.dataListViewAulas = kendo.observable({
 
 // START_CUSTOM_CODE_dataListViewAulasModel
 // Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes
-(function (parent) {
+(function(parent) {
     var dataProvider = app.data.mackCloud,
-        flattenLocationProperties = function (dataItem) {
+        flattenLocationProperties = function(dataItem) {
             var propName, propValue,
-                isLocation = function (value) {
+                isLocation = function(value) {
                     return propValue && typeof propValue === 'object' &&
                         propValue.longitude && propValue.latitude;
                 };
@@ -43,7 +43,7 @@ app.dataListViewAulas = kendo.observable({
                 field: 'Disciplina'
             },
 
-            change: function (e) {
+            change: function(e) {
                 var data = this.data();
                 for (var i = 0; i < data.length; i++) {
                     var dataItem = data[i];
@@ -76,7 +76,7 @@ app.dataListViewAulas = kendo.observable({
                 field: 'Tipo'
             },
 
-            change: function (e) {
+            change: function(e) {
                 var data = this.data();
                 for (var i = 0; i < data.length; i++) {
                     var dataItem = data[i];
@@ -107,16 +107,16 @@ app.dataListViewAulas = kendo.observable({
         dataSourceFile = new kendo.data.DataSource(dataSourceOptFile),
         dataListViewAulasModel = kendo.observable({
             dataSource: dataSource,
-            itemClick: function (e) {
-                dataSourceFile.fetch(function () {
+            itemClick: function(e) {
+                dataSourceFile.fetch(function() {
                     app.mobileApp.navigate('#components/dataListViewAulas/details.html?uid=' + e.dataItem.uid);
                 });
             },
-            addFile: function () {
-                var success = function (data) {
+            addFile: function() {
+                var success = function(data) {
                     navigator.notification.alert("Foi");
                 };
-                var error = function () {
+                var error = function() {
                     navigator.notification.alert("Unfortunately we could not add the image");
                 };
                 var config = {
@@ -126,11 +126,11 @@ app.dataListViewAulas = kendo.observable({
                 };
                 navigator.camera.getPicture(success, error, config);
             },
-            detailsShow: function (e) {
+            detailsShow: function(e) {
                 var item = e.view.params.uid,
                     dataSource = dataListViewAulasModel.get('dataSource'),
                     itemModel = dataSource.getByUid(item);
-                
+
                 itemModel.arquivos = dataSourceFile;
                 console.log(itemModel.arquivos);
                 if (!itemModel.Disciplina) {

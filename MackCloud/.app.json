@@ -47,29 +47,7 @@
         }
       ],
       "title": "Disciplinas",
-      "addToNavigation": true,
-      "icon": "organize"
-    },
-    {
-      "type": "kendo-ui-mobile:view",
-      "name": "dataListViewFiles",
-      "components": [
-        {
-          "type": "kendo-ui-mobile:list",
-          "name": "dataListViewFilesModel",
-          "dataProvider": "mackCloud",
-          "collection": "Arquivo",
-          "headerField": "Titulo",
-          "subHeaderField": "file",
-          "group": "Tipo",
-          "masterDetails": false,
-          "pullToRefresh": false,
-          "endlessScroll": false
-        }
-      ],
-      "title": "Arquivos",
-      "addToNavigation": true,
-      "icon": "organize"
+      "addToNavigation": false
     },
     {
       "type": "kendo-ui-mobile:view",
@@ -81,7 +59,7 @@
             {
               "type": "kendo-ui-mobile:field",
               "name": "titulo",
-              "title": "Username",
+              "title": "Título",
               "inputType": "text"
             }
           ],
