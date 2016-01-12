@@ -136,13 +136,37 @@
     margin-right: 1rem;
 }
 
-#kendoUiMobileApp.km-nova span.km-switch.km-switc {
+#kendoUiMobileApp.km-nova span.km-switch {
     color: #ff4350;
 }
 
 #kendoUiMobileApp.km-nova span.km-switch.km-switch-on input[type=checkbox]:checked + span + span {
     border-color: #ff4350;
     background-color: #ff4350;
+}
+
+#kendoUiMobileApp .unsupported-preview {
+    text-align: center;
+    margin-top: 12rem;
+}
+
+#kendoUiMobileApp .info-icon {
+    margin: 0 auto;
+    width: 3.3rem;
+    height: 3.3rem;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAABIklEQVRoge3YMU4CURDG8R+KqImGxNoTWNgYqSgtvYBn8EY2nkE7LTwItbGUwhgLFSxgLTS4i4w+SOafTDc73/vydva9HZIkSZIlooNrPM6IK2wUW10DehjXRC9ScC2ymMkOROQ0JtrAv5MGvjAKyinGLgZmN/AAO5GCrchiU9rY9313R7jH2x9oJslvieqBU5z5+Zowwh0ugjTD6OBF/RWiioNI8YhzYBtbc+TvBWh+kiexwt/1CAPPuMR7QK3i9NU3cT9SMHugNGmgNGmgNCtvYD2ozjHOcYLDmtxNHOEJD0H6C9HGUPPbaBXD6bPF6Zp/8VV0FxVf+R6IMLDInGdpZkS35n99biKEo/6JWyazoKaj81eTGdE4SD9JkiRJVpMPXjloDVm2S04AAAAASUVORK5CYII=');
+    background-repeat: no-repeat;
+}
+
+#kendoUiMobileApp .editableListItem label {
+    display: block;
+}
+
+#kendoUiMobileApp .editableListItem label span {
+    display: inline-block;
+    width: 50%;
+    float: right;
+    word-break: break-word;
 }
 
 
@@ -152,52 +176,66 @@
     background-color: rgb(255, 0, 0);
     color: rgb(255, 255, 255);
 }
+
 .km-flat .km-view .km-content .km-list .km-state-active .km-listview-link {
     background-color: rgb(211, 29, 21);
 }
+
 .km-flat .km-view .km-content .km-list > li .km-switch .km-switch-container {
     background-color: rgb(153, 153, 153);
 }
+
 .km-flat .km-view .km-content .km-list > li .km-switch .km-switch-container .km-switch-handle {
     background-color: rgb(255, 255, 255);
 }
+
 .km-flat .km-view .km-content .km-list > li .km-switch .km-switch-container .km-switch-handle .km-switch-label-on {
     color: rgb(255, 255, 255);
 }
+
 .km-flat .km-view .km-navbar {
     background-color: rgb(211, 29, 21);
 }
+
 .km-flat .km-view .km-navbar .km-button {
     background-color: rgb(211, 29, 21);
 }
+
 .km-flat .km-view .km-navbar .km-button .km-text {
     color: rgb(255, 255, 255);
 }
+
 .km-flat .km-view .km-navbar .km-view-title > * {
     color: rgb(255, 255, 255);
 }
+
 .km-flat .km-view .km-tabstrip .km-button {
     background-color: rgb(211, 29, 21);
 }
+
 .km-flat .km-view .km-tabstrip .km-button .km-icon {
     color: rgb(255, 255, 255);
 }
+
 .km-flat .km-view .km-tabstrip .km-button .km-text {
     color: rgb(204, 204, 204);
 }
+
 .km-flat .km-view .km-tabstrip .km-button.km-state-active {
     background-color: rgb(165, 23, 16);
 }
+
 .km-flat .km-view .km-tabstrip .km-button.km-state-active .km-text {
     color: rgb(255, 255, 255);
 }
+
 .km-flat .km-view .km-tabstrip .km-state-active span.km-icon {
     color: rgb(255, 255, 255);
 }
+
 .km-flat .km-view .km-content .km-button {
     background-color: rgb(211, 29, 21);
 }
-
 
 
 /* END_CUSTOM_CODE_kendoUiMobileApp */

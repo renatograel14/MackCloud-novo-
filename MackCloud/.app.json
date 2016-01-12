@@ -81,8 +81,9 @@
             {
               "type": "kendo-ui-mobile:field",
               "name": "titulo",
-              "title": "Username",
-              "inputType": "text"
+              "title": "Título",
+              "inputType": "text",
+              "placeholder": "Insira uma legenda para a imagem"
             }
           ],
           "name": "createArquivoModel",

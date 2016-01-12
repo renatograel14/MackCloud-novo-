@@ -45,12 +45,11 @@ app.home = kendo.observable({
         },
         homeModel = kendo.observable({
             displayName: '',
-            tia: '',
             email: '',
             password: '',
             validateData: function(data) {
-                if (!data.tia) {
-                    alert('Missing TIA');
+                if (!data.email) {
+                    alert('Missing email');
                     return false;
                 }
 
@@ -63,17 +62,17 @@ app.home = kendo.observable({
             },
             signin: function() {
                 var model = homeModel,
+                    email = model.email.toLowerCase(),
                     password = model.password;
 
                 if (!model.validateData(model)) {
                     return false;
                 }
-                provider.Users.login(model.tia, password, successHandler, init);
+                provider.Users.login(email, password, successHandler, init);
             },
             register: function() {
                 var model = homeModel,
                     email = model.email.toLowerCase(),
-                    tia = model.tia,
                     password = model.password,
                     displayName = model.displayName,
                     attrs = {
@@ -85,7 +84,7 @@ app.home = kendo.observable({
                     return false;
                 }
 
-                provider.Users.register(tia, password, attrs, successHandler, init);
+                provider.Users.register(email, password, attrs, successHandler, init);
             },
             toggleView: function() {
                 mode = mode === 'signin' ? 'register' : 'signin';
