@@ -70,29 +70,6 @@
       "title": "Arquivos",
       "addToNavigation": true,
       "icon": "organize"
-    },
-    {
-      "type": "kendo-ui-mobile:view",
-      "name": "createArquivo",
-      "components": [
-        {
-          "type": "kendo-ui-mobile:form",
-          "components": [
-            {
-              "type": "kendo-ui-mobile:field",
-              "name": "titulo",
-              "title": "Título",
-              "inputType": "text",
-              "placeholder": "Insira uma legenda para a imagem"
-            }
-          ],
-          "name": "createArquivoModel",
-          "submitButton": "Enviar",
-          "cancelButton": "Cancelar"
-        }
-      ],
-      "title": "Envio de Imagem",
-      "addToNavigation": false
     }
   ],
   "dataProviders": [
