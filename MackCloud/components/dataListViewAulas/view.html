@@ -13,7 +13,7 @@
     <script type="text/x-kendo-template" id="dataListViewAulasModelTemplate">
         <div class="image-with-text">
             <h3>#: data['Titulo'] #</h3>
-            <p>#: data['Data'] #</p>
+            <p>#: kendo.toString(data['Data'], "D") #</p>
         </div>
     </script>
 </div>

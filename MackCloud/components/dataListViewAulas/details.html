@@ -18,13 +18,13 @@
     <script type="text/x-kendo-template" id="dataListViewArquivoModelTemplate">
         <div class="image-with-text">
             <h3>#: data['Titulo'] #</h3>
-            <p>#: data['file'] #</p>
+            <img src="#: data['file']['Uri'] #" width="100%"></img>
         </div>
     </script>
 
 
     <div data-role="navbar">
-        <button data-role="button" data-align="right" data-icon='camera' data-bind="click: addFile"></button>
+        <button data-role="button" data-align="right" data-icon='camera' data-bind="click: currentItem.addFile"></button>
     </div>
     <!-- END_CUSTOM_CODE_dataListViewAulasModel -->
 </div>
